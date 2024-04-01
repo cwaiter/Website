@@ -23,6 +23,8 @@ app.UseAuthorization();
 
 //app.MapRazorPages();
 
-app.MapControllerRoute(name:"default", pattern: "{controller=Home}/{action=Home}");
+//app.MapControllerRoute(name:"default", pattern: "{controller=Home}/{action=Home}");
+
+app.MapControllers();
 
 app.Run();

@@ -11,9 +11,17 @@ namespace Website.Controllers
             _logger = logger;
         }
 
+        [Route("")]
         public IActionResult Home()
         {
             _logger.LogInformation("Hit - Home()");
+            return View();
+        }
+
+        [Route("/privacy")]
+        public IActionResult Privacy()
+        {
+            _logger.LogInformation("Hit - Privacy()");
             return View();
         }
     }
