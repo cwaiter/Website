@@ -24,6 +24,8 @@
 
 html {
     font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -36,15 +38,12 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+body {
+    margin-bottom: 60px;
 }
 
-body {
+h1 {
     color: var(--color-primary-600);
-    background-color: var(--color-surface-100);
-    margin-bottom: 60px;
 }
 
 .navbar {
@@ -52,6 +51,10 @@ body {
     background-color: var(--color-surface-400);
 }
 
-.footer-links:visited, footer-links:link {
+.link:visited, .link:link {
     color: var(--color-primary-600);
+}
+
+.no-underline:visited, .no-underline:link {
+    text-decoration: none;
 }

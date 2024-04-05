@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title - Connor Waiter</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Website.styles.css" asp-append-version="true" />
 </head>
@@ -19,13 +19,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="navbar-brand">
-                            Connor Waiter
+                            <a href="/" class="text-muted no-underline">Connor Waiter</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link ">Home</a>
+                            <a href="/" class="nav-link link">USM</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/privacy" class="nav-link">Privacy</a>
+                            <a href="/" class="nav-link link">University</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link link">Work</a>
                         </li>
                     </ul>
                 </div>
@@ -40,12 +43,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; @DateTime.Now.Year - Connor Waiter - <a href="https://www.linkedin.com/in/cwaiter/" class="footer-links" target="_blank">LinkedIn</a> - <a href="https://github.com/cwaiter/Website" class="footer-links" target="_blank">Source code</a>
+            &copy; @DateTime.Now.Year - Connor Waiter - <a href="https://www.linkedin.com/in/cwaiter/" class="link" target="_blank">LinkedIn</a> - <a href="https://github.com/cwaiter/Website" class="link" target="_blank">Source code</a>
         </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
